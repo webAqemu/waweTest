@@ -1,0 +1,230 @@
+@import "fonts";
+@import "vars";
+@import "global";
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  max-width: 100%;
+  width: 100%;
+
+  &__inner {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+  }
+
+  &__nav {
+    max-width: 715px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+
+  &__item {
+    margin-right: 45px;
+    &:nth-last-child(1) {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $green;
+      transform: translateX(-100%);
+      transition: transform 0.3s;
+    }
+    &:hover::after,
+    &.active::after {
+      transform: translateX(0);
+    }
+  }
+}
+
+.preview {
+  min-height: 100vh;
+  max-height: fit-content;
+  background-image: url(../img/preview-bg.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 45%;
+    background: linear-gradient(180deg, #01353e 0%, rgba(51, 51, 51, 0.595076) 31.64%, rgba(51, 51, 51, 0.222586) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: "Raleway-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 200px;
+    color: $dark-green;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 24px;
+  }
+
+  &__link {
+    display: block;
+    width: 20px;
+    height: 69px;
+    background-image: url(../img/preview-arrow-down.svg);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+  }
+}
+
+.about {
+  padding: 180px 0 200px;
+
+  &__inner {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &__text {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+    max-width: 490px;
+    width: 100%;
+    margin: 0 0 30px;
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.advantages {
+  padding: 200px 0;
+  background-color: $grey;
+
+  &__list {
+    margin: 100px 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__item {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 350px;
+    width: 100%;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 15px 0;
+    height: 55px;
+    h3 {
+      font-weight: normal;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 0 0 0 10px;
+      max-width: 160px;
+      width: 100%;
+    }
+  }
+
+  &__text p {
+    margin: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__stat {
+    margin-bottom: 10px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__num {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  &__text,
+  &__desc,
+  &__main {
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+  }
+
+  &__main {
+    display: inline-block;
+    max-width: 600px;
+    width: 100%;
+
+    p {
+      margin: 0 0 30px 0;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+///////////// 93 min ////////////////
