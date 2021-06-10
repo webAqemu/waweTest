@@ -13,18 +13,19 @@
       <div class="container">
         <div class="header__inner">
           <div class="header__logo">
-            <img src="./img/logo.svg" alt="logo" class="logo" />
+            <a href="./index.html" class="logo" style="background-image: url(./img/logo.svg)"></a>
           </div>
           <nav class="header__nav">
             <ul class="header__list">
-              <li class="header__item"><a href="#" class="header__link active">О нас</a></li>
-              <li class="header__item"><a href="#" class="header__link">Услуги</a></li>
-              <li class="header__item"><a href="#" class="header__link">Стоимость</a></li>
-              <li class="header__item"><a href="#" class="header__link">Блог</a></li>
-              <li class="header__item"><a href="#" class="header__link">Команда</a></li>
-              <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О нас</a></li>
+              <li class="header__item"><a href="#advantages" class="header__link">Услуги</a></li>
+              <li class="header__item"><a href="#services" class="header__link">Стоимость</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Блог</a></li>
+              <li class="header__item"><a href="#team" class="header__link">Команда</a></li>
+              <li class="header__item"><a href="#feedback" class="header__link">Контакты</a></li>
             </ul>
           </nav>
+          <div class="burger"></div>
         </div>
       </div>
     </header>
@@ -40,7 +41,7 @@
       </section>
       <section class="about" id="about">
         <div class="container">
-          <h2 class="about__title title">о школе, о серфинге, о канарах</h2>
+          <h2 class="about__title title">о&nbsp;школе, о&nbsp;серфинге, о&nbsp;канарах</h2>
           <div class="about__inner">
             <p class="about__text">Канарские острова не случайно называют европейскими Гавайями – это идеальное место для поклонников серфинга: стабильный теплый ветер круглый год, песчаные пляжи, километры нетронутых просторов и прозрачное море. А настоящей Меккой для серфингистов становится Фуэртевентура – второй по величине остров архипелага.</p>
             <p class="about__text">Пока что вы только хотите понять, что такое серфинг, или уже испытали всю прелесть катания на волнах, но желаете поднять свой уровень? Наша школа серфинга сможет предложить обучение для любого уровня подготовки.</p>
@@ -53,7 +54,7 @@
           </div>
         </div>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <div class="container">
           <div class="title">в школе вы получите</div>
           <ul class="advantages__list">
@@ -109,11 +110,13 @@
       </section>
       <section class="promo">
         <div class="container">
-          <h2 class="promo__title title">покоряй вершины</h2>
-          <div class="promo__text">
-            <p>Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы по лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами. Все члены преподавательского состава являются сертифицированными членами Федерации серфинга Канарских островов. Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за границей!</p>
-            <p>Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся по всему миру различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны: вас обучают лучшие тренеры!</p>
-            <p>Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня ТОП. Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в группах. Однако, мы предлагаем персональные уроки серфинга - только вы и тренер!</p>
+          <div class="promo__inner">
+            <h2 class="promo__title title">покоряй вершины</h2>
+            <div class="promo__text">
+              <p>Преподаватели нашей школы серфинга в числе лучших серферов на Канарских островах. Среди них - чемпион Европы по лонгборду, который с радостью поделится опытом как с новичками, так и более опытными серферами. Все члены преподавательского состава являются сертифицированными членами Федерации серфинга Канарских островов. Некоторые из них знают русский язык, что определенно позиционирует нас как русскую школу серфинга за границей!</p>
+              <p>Весь тренерский состав регулярно участвует в семинарах и курсах повышения квалификации, которые проводятся по всему миру различными известными серф-клубами и федерациями. Поэтому в нашей школе серфинга вы можете быть спокойны: вас обучают лучшие тренеры!</p>
+              <p>Методика обучения серфингу рассчитана как на новичков, на серферов среднего уровня, так и на серферов уровня ТОП. Тренеры находят подход к каждому, несмотря на то, что обучение серфингу в нашей школе производится в группах. Однако, мы предлагаем персональные уроки серфинга - только вы и тренер!</p>
+            </div>
           </div>
         </div>
         <div class="promo__img">
@@ -149,12 +152,12 @@
               <img src="./img/gallery-photo-6.png" alt="gallery image" />
             </div>
           </div>
-          <button class="gallery__more">показать еще</button>
+          <button class="gallery__more btn">показать еще</button>
         </div>
       </section>
       <section class="quote">
         <div class="container">
-          <div class="quote__title">«Если сомневаешься – иди катайся.»</div>
+          <div class="quote__title">«Если сомневаешься –&nbsp;иди&nbsp;катайся.»</div>
           <div class="quote__author">Нэт Янг, первый Чемпион Мира по сёрфингу</div>
         </div>
       </section>
@@ -181,8 +184,8 @@
           </ul>
         </div>
       </section>
-      <section class="blog">
-        <div class="title">блог</div>
+      <section class="blog" id="blog">
+        <h2 class="title">блог</h2>
         <div class="blog__slider">
           <div class="blog__slide">
             <div class="blog__item" style="background-image: url(./img/slider-img-1.png)">
@@ -266,12 +269,114 @@
           </div>
         </div>
       </section>
-      <section class="team">
+      <section class="team" id="team">
         <div class="container">
-          <div class="title">наша команда</div>
+          <h2 class="title">наша команда</h2>
+          <div class="team__inner">
+            <div class="team__instructor">
+              <img src="./img/instructor-1.png" alt="instructor image" class="team__img" />
+              <div class="team__name">Mike</div>
+              <div class="team__desc">Главный инстуктор</div>
+            </div>
+            <div class="team__instructor">
+              <img src="./img/instructor-2.png" alt="instructor image" class="team__img" />
+              <div class="team__name">Mary</div>
+              <div class="team__desc">инстуктор</div>
+            </div>
+            <div class="team__instructor">
+              <img src="./img/instructor-3.png" alt="instructor image" class="team__img" />
+              <div class="team__name">Olga</div>
+              <div class="team__desc">инстуктор</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="title">пакеты услуг</h2>
+          <div class="services__inner">
+            <div class="services__item">
+              <div class="services__title">Стандарт</div>
+              <ul class="services__list">
+                <li class="services__advantage">Проживание на вилле 6 ночей</li>
+                <li class="services__advantage">Номер категории стандарт</li>
+                <li class="services__advantage">Экипировка для обучения</li>
+                <li class="services__advantage">Обучение серфингу 5 тренировок по 2 часа</li>
+                <li class="services__advantage">Страховка</li>
+                <li class="services__advantage">Вечеринка с угощениями и дискотекой</li>
+              </ul>
+              <div class="services__price"><span>450</span>$</div>
+            </div>
+            <div class="services__item">
+              <div class="services__title">Все включено</div>
+              <ul class="services__list">
+                <li class="services__advantage">Проживание на вилле 6 ночей</li>
+                <li class="services__advantage">Номер категории люкс</li>
+                <li class="services__advantage">Экипировка для обучения</li>
+                <li class="services__advantage">Обучение серфингу 8 тренировок по 2 часа</li>
+                <li class="services__advantage">Страховка</li>
+                <li class="services__advantage">Вечеринка с угощениями и дискотекой</li>
+                <li class="services__advantage">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                <li class="services__advantage">Завтраки на вилле</li>
+              </ul>
+              <div class="services__price"><span>950</span>$</div>
+            </div>
+            <div class="services__item">
+              <div class="services__title">Профи</div>
+              <ul class="services__list">
+                <li class="services__advantage">Проживание на вилле 8 ночей</li>
+                <li class="services__advantage">Номер категории люкс</li>
+                <li class="services__advantage">Экипировка для обучения</li>
+                <li class="services__advantage">Обучение серфингу 8 тренировок по 2 часа</li>
+                <li class="services__advantage">Страховка</li>
+                <li class="services__advantage">Вечеринка с угощениями и дискотекой</li>
+                <li class="services__advantage">Авиа перелет Тенерифе -Лансароте - Тенерифе</li>
+                <li class="services__advantage">Завтраки и ужины на вилле</li>
+              </ul>
+              <div class="services__price"><span>1450</span>$</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map">
+        <div class="container">
+          <div class="map__inner" id="map"></div>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <div class="container">
+          <h2 class="title">оставить заявку</h2>
+          <div class="feedback__inner">
+            <form class="feedback__form">
+              <input type="text" class="feedback__input" placeholder="Имя" required />
+              <input type="text" class="feedback__input" placeholder="Телефон" required />
+              <textarea class="feedback__textarea" placeholder="Оставьте сообщение, и мы свяжемся с Вами в ближайшее время"></textarea>
+              <button class="feedback__submit btn">отправить</button>
+            </form>
+            <div class="feedback__contacts">
+              <p class="feedback__text">
+                Есть вопрос?<br />
+                Вы можете связаться с нами:
+              </p>
+              <p class="feedback__text">
+                WhatsApp, Viber, Telegram
+                <a href="tel:+34674863788" class="feedback__phone">+3 467 486-37-88</a>
+              </p>
+              <address class="feedback__address">Avenida grandes playas 79, Corralejo la Oliva Fuerteventura, Spain. 35660</address>
+            </div>
+          </div>
+          <ul class="feedback__social">
+            <li><a href="#" class="feedback__link">instagram</a></li>
+            <li><a href="#" class="feedback__link">facebook</a></li>
+            <li><a href="#" class="feedback__link">youtube</a></li>
+          </ul>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <a href="./index.html" class="logo" style="background-image: url(./img/logo.svg)"></a>
+    </footer>
+    <div class="layer"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
