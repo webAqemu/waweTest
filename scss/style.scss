@@ -1247,6 +1247,12 @@
   }
 }
 
+@media (max-width: 350px) {
+  .feedback__social {
+    bottom: 265px;
+  }
+}
+
 .footer {
   padding: 70px 0;
   display: flex;
