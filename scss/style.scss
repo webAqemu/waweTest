@@ -180,6 +180,9 @@
   min-height: 100vh;
   max-height: fit-content;
   background-image: url(../img/preview-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
