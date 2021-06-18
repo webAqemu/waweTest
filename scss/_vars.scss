@@ -2,10 +2,16 @@ $green: #00b2a0;
 $title: #01353e;
 $text: #242121;
 $grey: #f8f8f8;
+$dark-grey: #373a39;
 $dark-green: #0d302c;
 $border: #dadada;
-/* 
-@mixin variable {
-  background: linear-gradient(135deg, #5ba4e5 0%, #7384fe 100%);
-} 
-*/
+
+$r-xl: 1100;
+$r-md: 768;
+$r-sm: 500;
+
+@mixin r($width) {
+  @media (max-width: $width + "px") {
+    @content;
+  }
+}

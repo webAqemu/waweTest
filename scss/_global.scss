@@ -1,10 +1,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-
-  &.active {
-    overflow: hidden;
-  }
 }
 *,
 *::before,
@@ -12,30 +8,12 @@ html {
   box-sizing: inherit;
 }
 
-html,
-body {
-  position: relative;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-
 body {
   background-color: white;
-  font-family: "Roboto-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
+  font: 400 14px "Roboto", sans-serif;
   line-height: 1.3;
   letter-spacing: 0.6px;
   color: $text;
-}
-
-input,
-input::placeholder,
-textarea,
-textarea::placeholder {
-  font-family: "Roboto-Regular", sans-serif;
-  font-weight: 400;
 }
 
 .container {
@@ -43,6 +21,10 @@ textarea::placeholder {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+
+  @include r($r-sm) {
+    padding: 0 5px;
+  }
 }
 
 .logo {
@@ -56,11 +38,9 @@ textarea::placeholder {
 }
 
 .title {
-  font-family: "Raleway-SemiBold", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   position: relative;
-  padding: 0;
-  margin: 0;
   color: $title;
   font-size: 48px;
   display: flex;
@@ -72,38 +52,18 @@ textarea::placeholder {
     font-size: 72px;
     color: $green;
   }
-}
 
-@media (max-width: 1100px) {
-  .title {
+  @include r($r-xl) {
     font-size: 36px;
     &::after {
       font-size: 55px;
     }
   }
-}
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 28px;
+  @include r($r-md) {
+    font-size: 32px;
     &::after {
-      font-size: 40px;
-    }
-  }
-}
-
-@media (max-width: 500px) {
-  .title {
-    font-size: 20px;
-    display: block;
-    padding-right: 20px;
-    margin: 0 auto;
-    width: fit-content;
-    &::after {
-      position: absolute;
-      right: 0;
-      bottom: -15px;
-      font-size: 30px;
+      display: none;
     }
   }
 }
@@ -123,12 +83,10 @@ textarea::placeholder {
     border-color: $green;
     background-color: $green;
   }
-}
 
-@media (max-width: 768px) {
-  .btn {
-    padding: 15px 50px 16px;
+  @include r($r-md) {
     font-size: 18px;
+    padding: 15px 50px;
   }
 }
 
